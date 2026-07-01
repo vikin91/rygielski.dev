@@ -1,1 +1,1 @@
-jQuery(document).ready(function($){$(".level-bar-inner").css("width","0"),$(window).on("load",function(){$(".level-bar-inner").each(function(){var n=$(this).data("level");$(this).animate({width:n},800)})})});
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll(".level-bar-inner");e.forEach(function(e){e.style.width="0",e.style.transition="width 0.8s ease-out"}),window.addEventListener("load",function(){e.forEach(function(e){e.style.width=e.getAttribute("data-level")})})});
